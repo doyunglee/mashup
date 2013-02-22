@@ -1,0 +1,32 @@
+extend layout
+
+block content
+   h1= 'Make a Card'
+   form(method="post") 
+     .span5
+       a(href='http://attackofthecute.com/popular.php', target='_blank')
+             img(src='http://cdn.attackofthecute.com/August-21-2011-18-46-10-47807-af8502-530-353.jpeg', border='2', style='border: 2px solid black; max-width: 100%;')
+     .span5
+       h4 
+        .control-group.success
+        label.control-label(for='inputSuccess') Make Someone Feel:
+          .controls
+            input#inputSuccess(type='text', name = 'phrase')
+
+       h4
+        .control-group.success
+        label.control-label(for='selectError') Pick a Disease:
+          .controls
+            select#selectError(name = 'disease')
+              option the Flu
+              option the Cooties
+              option Meningitis
+              option Mononucleosis
+              option Strep Throat
+              option Feline Urinary Tract Disease
+              option Fleas
+     p
+      .span12
+        div(type= "submit", style='text-align: center;')
+          p
+            button.btn.btn-success.btn-large(href='#') Make a Card! 
